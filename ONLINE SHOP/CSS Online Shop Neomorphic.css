@@ -1,0 +1,142 @@
+/* Gradient Styles */
+.gradient-card {
+    background: linear-gradient(135deg, #FFE5D9 0%, #E5D9FF 100%);
+}
+.gradient-hero-v2 {
+    background: linear-gradient(45deg, #D9FFE5 0%, #FFE5D9 50%, #E5D9FF 100%);
+}
+
+/* Base Neomorphic Styles */
+.neomorphic {
+    background: #f0f0f3;
+    border-radius: 20px;
+    box-shadow: 
+        20px 20px 60px #d1d1d4,
+        -20px -20px 60px #ffffff;
+}
+
+.neomorphic-inset {
+    background: #f0f0f3;
+    border-radius: 20px;
+    box-shadow: 
+        inset 20px 20px 60px #d1d1d4,
+        inset -20px -20px 60px #ffffff;
+}
+
+/* Neomorphic Buttons */
+.neomorphic-button {
+    background: linear-gradient(145deg, #f0f0f3, #cacaca);
+    border-radius: 15px;
+    box-shadow: 
+        20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.neomorphic-button:hover {
+    box-shadow: 
+        inset 20px 20px 60px #bebebe,
+        inset -20px -20px 60px #ffffff;
+}
+
+.neomorphic-button.active, /* For navigation buttons */
+.neomorphic-button.active-category-btn { /* For category filter buttons */
+    box-shadow: 
+        inset 15px 15px 30px #bebebe,
+        inset -15px -15px 30px #ffffff;
+    background: linear-gradient(145deg, #cacaca, #f0f0f3);
+}
+
+/* Neomorphic Cards */
+.neomorphic-card {
+    background: #f0f0f3;
+    border-radius: 25px;
+    box-shadow: 
+        15px 15px 30px #d1d1d4,
+        -15px -15px 30px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.neomorphic-card:hover {
+    box-shadow: 
+        25px 25px 50px #d1d1d4,
+        -25px -25px 50px #ffffff;
+    transform: translateY(-5px);
+}
+
+/* Neomorphic Inputs & Textareas */
+.neomorphic-input {
+    background: #f0f0f3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 
+        inset 8px 8px 16px #d1d1d4,
+        inset -8px -8px 16px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.neomorphic-input:focus {
+    outline: none;
+    box-shadow: 
+        inset 12px 12px 20px #d1d1d4,
+        inset -12px -12px 20px #ffffff;
+}
+
+/* Neomorphic Icons */
+.neomorphic-icon {
+    background: #f0f0f3;
+    border-radius: 50%;
+    box-shadow: 
+        10px 10px 20px #d1d1d4,
+        -10px -10px 20px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.neomorphic-icon:hover {
+    box-shadow: 
+        inset 10px 10px 20px #d1d1d4,
+        inset -10px -10px 20px #ffffff;
+}
+
+/* Neomorphic Section Background (Body fallback) */
+.neomorphic-section {
+    background: #f0f0f3;
+}
+.bg-neomorphic-section { /* Applied to body for consistent background */
+    background: #f0f0f3;
+}
+
+.neomorphic-hero {
+    background: linear-gradient(135deg, #f0f0f3 0%, #e8e8eb 50%, #f0f0f3 100%);
+}
+
+/* Page Transitions */
+.page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.page.active {
+    display: block;
+    opacity: 1;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background: rgba(240, 240, 243, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
+    position: sticky;
+    top: 80px; /* Adjust based on header height */
+    z-index: 40; /* Below header */
+}
